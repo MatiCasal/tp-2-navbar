@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: montserrat;
+}
+
+#darkside {
+  max-width: 80px;
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  position: relative;
+  left: 30px;
+  padding-top: 6px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.45rem;
+  background-image: url(/imagenes/espacio.jpg);
+  background-size: cover;
+}
+
+.navbar {
+  position: relative;
+  right: 70px;
+}
+
+#espacio {
+  background-image: url(/imagenes/espacio.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 275px;
+  background-position: center;
+  position: relative;
+  padding-bottom: 275px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+ul a {
+  color: white;
+  text-decoration: none;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap");
