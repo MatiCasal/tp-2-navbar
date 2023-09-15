@@ -3,35 +3,126 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trabajo Practico 2</title>
+    <title>Trabajo Practico 2 - Navbar</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
-      <img
-        id="darkside"
-        src="./imagenes/darkside2.png"
-        alt="The dark side of the moon"
-      />
-      <div>
-        <ul class="navbar">
+    <header>
+      <img class="logo" src="/imagenes/logomcc.png" alt="logo fotografia" />
+      <nav class="navbar">
+        <ul class="nav__list">
           <li class="nav__link">
-            <a href="#"><b>Home</b></a>
+            <a href="#info-mati"><b>Sobre Mi</b></a>
           </li>
           <li class="nav__link">
-            <a href="#"><b>News</b></a>
+            <a href="#fotoga"><b>Galeria</b></a>
           </li>
           <li class="nav__link">
-            <a href="#"><b>Discography</b></a>
+            <a href="#"><b>Mi Equipo</b></a>
           </li>
           <li class="nav__link">
-            <a href="#"><b>Photos</b></a>
+            <a href="#nav_contacto"><b>Contacto</b></a>
           </li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </header>
+
     <main>
-      <div id="espacio"></div>
+      <!-- hero -->
+      <section id="hero">
+        <div class="hero-info">
+          <h1 id="info-mati">Matias Casal Fotografia</h1>
+
+          <p>
+            Soy Matias Casal, tengo 28 años y vivo en Comodoro Rivadavia-Chubut,
+            Argentina. Desde que fui chico la fotografia me cautivo, tuve mi
+            primer camara analogica a los 11 años, a los 15 la primera digital,
+            y a los 21 me pude comprar la primer Dslr. En mis imágenes intento
+            mostrar ese momento, ese instante que nunca vuelve a ser el mismo,
+            poder capturar un pedacito de la vida de las personas, de los
+            animales, los paisajes, buscando detalles, texturas, abstracción y
+            momentos especiales para crear arte donde los sentimientos
+            predominen por sobre lo visual.
+          </p>
+          <a href="#nav_contacto">Contacto</a>
+        </div>
+
+        <div class="hero-img">
+          <img src="/imagenes/autoretrato.jpg" alt="autoretrato" />
+        </div>
+      </section>
+
+      <!-- -----Galeria----- -->
+      <section id="galeria">
+        <h2 id="fotoga">Galeria</h2>
+
+        <!-- ------sol------ -->
+        <div class="contenedor-fotos">
+          <div class="foto-1">
+            <img src="/imagenes/amanecer.jpg" alt="amanecer" />
+          </div>
+          <div class="foto-2">
+            <img src="/imagenes/playa.jpg" alt="Dos personas en la playa" />
+          </div>
+          <div class="foto-3">
+            <img src="/imagenes/atardecer.jpg" alt="atardecer" />
+          </div>
+        </div>
+
+        <!-- -------plantas------- -->
+        <div class="contenedor-flores">
+          <div class="foto-4">
+            <img src="/imagenes/flor.jpg" alt="flor naranja" />
+          </div>
+          <div class="foto-5">
+            <img src="/imagenes/rosa.jpg" alt="rosa con una araña" />
+          </div>
+          <div class="foto-6">
+            <img src="/imagenes/lagartija.jpg" alt="lagartija" />
+          </div>
+        </div>
+      </section>
+      <section id="contacto">
+        <div class="div-contact">
+          <h2 id="nav_contacto" class="contactame">Contacto</h2>
+          <h3 class="pregunta">
+            ¿Querés preguntarme algo? Hacelo en el formulario de abajo, me
+            contactaré cuanto antes!
+          </h3>
+          <div class="datos">
+            <label for="nombre"
+              >Nombre:
+              <input
+                id="nombre"
+                type="text"
+                placeholder="Ingrese su nombre:"
+                required
+              />
+            </label>
+            <label for="correo"
+              >Correo:
+              <input
+                id="correo"
+                type="text"
+                placeholder="Ingrese su correo:"
+                required
+              />
+            </label>
+            <label for="textarea-msj"
+              >Mensaje:
+              <textarea
+                id="textarea-msj"
+                rows="1"
+                cols="30"
+                placeholder="Ingrese su mensaje:"
+              ></textarea>
+            </label>
+            <label for="enviar">
+              <input id="enviar" type="submit" />
+            </label>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>

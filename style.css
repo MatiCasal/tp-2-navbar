@@ -1,53 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+:root {
+  --background: black;
+  --primary: blue;
+  --secondary: red;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: montserrat;
+  list-style: none;
 }
 
-#darkside {
-  max-width: 80px;
-  border-radius: 50%;
-  height: 55px;
-  width: 55px;
-  position: relative;
-  left: 30px;
-  padding-top: 6px;
+body {
+  font-family: "Inter", sans-serif;
 }
 
-nav {
+header {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.45rem;
-  background-image: url(/imagenes/espacio.jpg);
-  background-size: cover;
+  height: 65px;
+  padding: 0px 30px;
+  /* background-color: rgb(249, 249, 249); */
+  background-image: url(/imagenes/Portrait.jpg);
+  position: fixed;
+  top: 0;
+  /* z-index: 2; */
 }
 
-.navbar {
-  position: relative;
-  right: 70px;
+.logo {
+  height: 100%;
 }
 
-#espacio {
-  background-image: url(/imagenes/espacio.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 275px;
-  background-position: center;
-  position: relative;
-  padding-bottom: 275px;
-}
-
-ul {
-  list-style: none;
+.navbar .nav__list {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 0.4rem;
+  height: 80px; */
+}
+
+.nav__list {
   gap: 40px;
+  font-size: 16px;
+}
+
+.nav__list li:first-child > a {
+  font-weight: 600;
+  color: black;
 }
 
 ul a {
-  color: white;
+  color: rgb(76, 66, 66);
   text-decoration: none;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap");
+main {
+  background-image: url(/imagenes/fondo-azul.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* color: var(--text-white); */
+  width: 100%;
+  /* height: 100vh; */
+}
+
+/* Hero Section */
+#hero {
+  margin-top: 40px;
+  padding: 40px 0;
+
+  max-width: 1000px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 25px;
+}
+
+h1 {
+  color: white;
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  /* background-color: aqua; */
+  padding: 2%;
+
+  gap: 20px;
+  width: 150%;
+  position: relative;
+  left: 25px;
+}
+
+.hero-info h1 {
+  font-size: 48px;
+  width: 80%;
+  font-weight: 700;
+}
+
+.hero-info p {
+  /* background-color: brown; */
+  font-size: 15px;
+  width: 100%;
+  color: rgb(215, 236, 255);
+  font-family: "Inter";
+}
+
+.hero-info a {
+  border-radius: 8px;
+  font-size: 14px;
+  color: rgb(249, 242, 232);
+  text-decoration: none;
+  background-color: rgb(70, 64, 64);
+  padding: 6px 8px;
+  width: 120px;
+  text-align: center;
+}
+
+.hero-img {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: 25px;
+
+  /* background-color: red; */
+  padding: 2%;
+}
+
+.hero-img img {
+  /* height: 10%; */
+  width: 50%;
+  border-radius: 5%;
+}
+
+#galeria {
+  padding: 70px 0;
+  max-width: 1200px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  gap: 25px;
+  /* background-color: green; */
+}
+
+#galeria h2 {
+  padding: 10px 25px;
+  /* background-color: antiquewhite; */
+  font-size: 2rem;
+  color: rgb(249, 242, 232);
+  /* background-color: rgb(70, 64, 64);
+  border-radius: 9px; */
+}
+
+.contenedor-fotos {
+  width: 1200px;
+  height: 400px;
+  /* margin: 5px; */
+  /* background-color: red; */
+
+  /* background-color: blanchedalmond; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1px 1px;
+}
+
+.contenedor-fotos img {
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+
+  /* object-fit: cover; */
+}
+
+.foto-1 {
+  width: 407vw;
+}
+
+.foto-3 {
+  width: 350vw;
+}
+
+.contenedor-flores {
+  width: 1200px;
+  height: 400px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1px 1px;
+}
+
+.contenedor-flores img {
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+#contacto {
+  width: 90%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  padding: 20px 10px;
+
+  gap: 5px;
+  /* background-color: red; */
+}
+
+.contactame {
+  /* background-color: wheat; */
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85vw;
+  padding: 15px;
+  color: rgb(249, 242, 232);
+}
+
+.pregunta {
+  /* background-color: lightskyblue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85vw;
+  padding: 15px;
+  color: rgb(249, 242, 232);
+}
+
+.datos {
+  /* background-color: lightgreen; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 85vw;
+  gap: 20px;
+  color: rgb(249, 242, 232);
+  padding: 15px;
+}
